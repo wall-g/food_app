@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Basis_Grotesque_Pro_Bold;;
+}
+
+.header {
+    padding: 16px;
+    border-bottom: 0.5px solid #c8c9ce;
+}
+
+.restaurant-card-body {
+    width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: 36px 16px;
+}
+
+.restaurant-card {
+    cursor: pointer;
+    margin-bottom: 16px;
+    width: 240px;
+}
+
+.restaurant-card img {
+    border-radius: 12px;
+    height: 150px;
+    width: 240px;
+    transition: all 0.3s ease;
+}
+
+.restaurant-card img:hover {
+    height: 145px;
+    width: 235px;
+}
+
+.restaurant-card-content {
+    padding: 6px;
+}
+
+.restaurant-card-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    width: 220px;
+    height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.restaurant-card-content h6 {
+    font-size: 16px;
+    font-weight: 500;
+    width: 220px;
+    height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 4px;
+}
+
+
