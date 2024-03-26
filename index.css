@@ -23,6 +23,10 @@
     width: 240px;
 }
 
+.mock-restaurant-card {
+    margin-bottom: 36px;
+}
+
 .restaurant-card img {
     border-radius: 12px;
     height: 150px;
@@ -58,6 +62,33 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-top: 4px;
+}
+
+.mock-restaurant-img {
+    border-radius: 12px;
+    height: 150px;
+    width: 240px;
+    background-color: #bdc1cd;;
+}
+
+.mock-restaurant-card-content {
+    margin-top: 6px;
+}
+    
+.mock-restaurant-card-content h5 {
+    width: 220px;
+    height: 12px;
+    background-color: #bdc1cd;
+    border-radius: 0 4px 4px 0;
+    margin-top: 16px;
+}
+
+.mock-restaurant-card-content h6 {
+    width: 200px;
+    height: 10px;
+    background-color: #bdc1cd;;
+    margin-top: 8px;
+    border-radius: 0 4px 4px 0;
 }
 
 
