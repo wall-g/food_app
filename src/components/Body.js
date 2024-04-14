@@ -17,13 +17,27 @@ const Body = () => {
         const resCards = json.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setRestaurantCards(resCards);
     }
+
+    function filterTopRated() {
+        const topRatedRestaurants = restaurantCards.filter((res) => res.info.avgRatingString >= 4.5);
+        setRestaurantCards(topRatedRestaurants);
+    }
+
     return (!restaurantCards.length) ?
         <Shimmer />
         :
         (
-            <div className="restaurant-body">
-                <div className="restaurant-card-body">
-                    {restaurantCards.map((res) => <RestaurantCard key={res.info.id} restaurant={res} />)}
+            <div>
+                <div className="restaurant-body">
+                    <div className="btn-container">
+                        <button className="top-rated-btn" onClick={() => {filterTopRated()}}>top rated restaurant</button>
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search..."/>
+                        </div>
+                    </div>
+                    <div className="restaurant-card-body">
+                        {restaurantCards.map((res) => <RestaurantCard key={res.info.id} restaurant={res} />)}
+                    </div>
                 </div>
             </div>
 

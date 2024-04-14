@@ -9,12 +9,16 @@
     border-bottom: 0.5px solid #c8c9ce;
 }
 
-.restaurant-card-body {
+.restaurant-body {
     width: 1080px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     padding: 36px 16px;
+}
+
+.restaurant-card-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 36px;
 }
 
 .restaurant-card {
@@ -91,4 +95,28 @@
     border-radius: 0 4px 4px 0;
 }
 
+.top-rated-btn {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    gap: 60px;
+}
+
+.search-container {
+    width: 60%
+}
+
+.search-container #search-input {
+    padding: 4px;
+    height: 32px;
+    width: 80%;
+}
+
+.search-container #search-button {
+    width: 10%;
+    height: 32px;
+}
 
