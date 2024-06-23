@@ -14,16 +14,16 @@ const Body = () => {
     async function fetchData() {
         const data = await fetch(swiggy_api);
         const json = await data.json();
-        const resCards = json.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        const resCards = json.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setRestaurantCards(resCards);
     }
 
     function filterTopRated() {
-        const topRatedRestaurants = restaurantCards.filter((res) => res.info.avgRatingString >= 4.5);
+        const topRatedRestaurants = restaurantCards.filter((res) => res.info.avgRatingString >= 4.2);
         setRestaurantCards(topRatedRestaurants);
-    }
+    }               
 
-    return (!restaurantCards.length) ?
+    return (!restaurantCards?.length) ?
         <Shimmer />
         :
         (
