@@ -1,9 +1,11 @@
 import { img_url } from "../utils/mockData";
+import { useNavigate } from "react-router-dom";
 
 const RestaurantCard = (props) => {
     const restaurant = props.restaurant.info;
+    const navigate = useNavigate();
     return (
-        <div className="restaurant-card">
+        <div className="restaurant-card" onClick={() => { navigate(`/restaurant/${restaurant.id}`) }}>
             <div className="restaurant-img">
                 <img src={img_url + restaurant.cloudinaryImageId}></img>
             </div>

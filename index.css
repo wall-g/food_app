@@ -7,6 +7,17 @@
 .header {
     padding: 16px;
     border-bottom: 0.5px solid #c8c9ce;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .links {
+    width: 20%;
+    display: flex;
+}
+
+.header .links a {
+    margin-left: 24px;
 }
 
 .restaurant-body {
